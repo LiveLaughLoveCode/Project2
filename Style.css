@@ -1,0 +1,551 @@
+/* All: */
+/* Fonts: */
+
+
+
+/* Container for the logo and heading */
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the logo */
+.logo {
+  position: absolute;  
+  left: -20px; 
+  width: 200px;  
+  max-width: 100%;
+  height: auto;  
+}
+
+/* Styling for the heading */
+h1 {
+  text-align: center;
+  font-size: 140px;
+  font-family: 'Helvetica', sans-serif;
+  color: #fff; 
+}
+
+
+/* Add a top margin to the body */
+body {
+    margin: 30px 100px 100px 100px;  
+    background-image: url('background3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff; 
+    font-family: 'Helvetica', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+	  height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* Styling for the footer */
+footer {
+    margin-top: auto;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+	bottom: 0;
+}
+
+
+/* Styling for the paragraphs */
+p {
+    font-family: 'Helvetica', sans-serif;
+    color: #fff; 
+    line-height: 1.6;
+    margin: 0 0 20px;
+    max-width: 100%;
+}
+
+/* Styling for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b9b9f0;
+  padding: 10px 10px;
+  margin-top: -15px;
+  margin-bottom: 5px;
+  max-width: 100%;
+}
+
+.navbar a {
+  font-size: 25px;
+  float: left;
+  display: block;
+  color: #2c2c2c;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  max-width: 100%;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #b02121;
+}
+
+.nav-links, .search-form {
+  flex: none;
+}
+
+.search-container {
+  background-color: #44444a;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.search-form {
+  justify-content: center;
+  background-color: transparent;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-control {
+  width: 100%; 
+  max-width: 100%;
+  height: 40px; 
+  font-size: 16px; 
+}
+
+.btn {
+  padding: 6px 20px; 
+  font-size: 16px; 
+  color: #ffffff;
+  border: 3px solid #198754;
+}
+
+.dropbtn {
+  background-color: #b9b9f0;
+  color: #2c2c2c;
+  padding: 14px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent
+}
+
+
+
+
+/* About me: */
+/* Styling for Carousel */
+.carousel-caption {
+    position: absolute;
+    max-width: 100%;
+}
+
+.carousel-caption h5 {
+    color: #ffffff; 
+    font-size: 50px; 
+    max-width: 100%;
+	background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px;
+	display: inline-block;
+	border-radius: 5px; 
+}
+
+.carousel-caption p {
+    color: #121212; 
+    font-size: 30px; 
+    max-width: 100%;
+}
+
+.carousel-inner {
+    height: 600px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+.carousel-control-prev::before {
+    content: '‹'; 
+    color: white;
+    font-size: 1.6em;
+    line-height: 0.8em; 
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    border-radius: 5px; 
+    text-align: center; 
+}
+
+.carousel-control-next::before {
+    content: '›'; 
+    color: white;
+    font-size: 1.6em;
+    line-height: 0.8em; 
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    border-radius: 5px; 
+    text-align: center; 
+}
+
+.carousel-control-prev:active::before {
+    color: lightgrey;
+}
+
+.carousel-control-next:active::before {
+    color: lightgrey;
+}
+
+
+
+/* Contacts: */
+/* Styling for the form (contacting panel) */
+form {
+    width: 55%; 
+    max-width: 100%;
+    margin: auto;
+    border: 2px solid #fff; 
+    padding: 20px; 
+	background-color: #2A2A2A;
+}
+
+/* Styling for the submit button */
+.submit-button {
+    background-color: #d10d16; 
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    margin: 4px 2px;
+    cursor: pointer; 
+    width: 160px; 
+    height: 40px; 
+    border-radius: 12px;
+    max-width: 100%;
+}
+
+/* Change the background color on mouse-over */
+.submit-button:hover {
+    background-color: #10912c;
+}
+
+/* Image of choice */
+.contact-image {
+  width: auto;  
+  height: 100%;  
+  max-width: 100%; 
+  display: block; 
+  margin: auto;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 2.5s;
+}
+
+/* Image animation */
+.contact-image.flipped {
+  transform: rotateY(360deg);
+}
+
+.contact-image:hover {
+  cursor: pointer;
+}
+
+
+
+/* Game One page styling */ 
+p.card-text {
+  font-family: 'Helvetica', sans-serif;
+  color: white; 
+}
+
+
+.card {
+  background-color: #292929;
+}
+
+.card img {
+  object-fit: cover;
+  height: 320px;
+  width: 100%;
+  max-width: 100%;
+}
+
+
+
+/* News page styling */ 
+.accordion {
+  background-color: #2a2a2a; 
+  color: #ffffff;
+}
+
+.accordion-item {
+  background-color: #2a2a2a; 
+  color: #ffffff;
+}
+
+.accordion-header {
+  background-color: #2a2a2a; 
+  color: #ffffff;
+}
+
+.accordion-button {
+  background-color: #2a2a2a; 
+  color: #ffffff;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #b9b9f0; 
+  color: #0a0a0a;
+}
+
+.accordion-button.collapsed::after {
+  filter: invert(1);
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: invert(0);
+}
+
+
+
+/* End */ 
+@media screen and (max-width: 900px) {
+	.header {
+    margin-top: -140px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	}
+
+    .logo {
+        position: static; 
+        width: 100%;
+        margin: 0; 
+    }
+
+    h1 {
+        position: static; 
+        width: 100%;
+        text-align: center;
+        font-size: 120px;
+        font-family: 'Helvetica', sans-serif;
+        color: #fff; 
+        margin-top: 0; 
+        left: 0px !important;
+    }
+
+    body {
+      margin: 150px 90px 90px 90px;  
+    }
+
+    .navbar .navbar-brand.hide-on-900 {
+      display: none;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+  .navbar .navbar-brand.hide-on-800 {
+    display: none;
+  }
+
+  body {
+    margin: 150px 60px 60px 60px; 
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
+  .navbar .navbar-brand.hide-on-700 {
+    display: none;
+  }
+
+  h1 {
+    font-size: 90px !important;	
+    margin-bottom: 32px;
+    }
+
+  body {
+    margin: 150px 30px 30px 30px; 
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+	h1 {
+	font-size: 120px;	
+	margin-bottom: 18px;
+	}
+
+  .navbar-brand {
+    font-size: 24px; 
+    }
+
+  .navbar a {
+      font-size: 24px; 
+  }
+	
+	.form-control {
+    height: 40px; 
+    font-size: 16px; 
+	}
+
+	.btn {
+	padding: 6px 20px; 
+	font-size: 16px; 
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	.form-control {
+    height: 35px; 
+    font-size: 14px; 
+	}
+
+	.btn {
+	padding: 6px 20px; 
+	font-size: 14px; 
+	}
+
+  body {
+    margin: 150px 0px 0px 0px; 
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+	h1 {
+	font-size: 80px !important;	
+	margin-bottom: 32px;
+	}
+	
+  .navbar-brand {
+    font-size: 20px; 
+  }
+
+  .navbar a {
+    font-size: 20px; 
+  }
+	
+	.form-control {
+    height: 30px; 
+    font-size: 12px; 
+	}
+	
+	.btn {
+	padding: 4px 18px; 
+	font-size: 12px; 
+	}
+
+
+  form input[type="text"], form input[type="email"], form input[type="tel"], form textarea {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+	h1 {
+	font-size: 60px !important;	
+	margin-bottom: 32px;
+	}
+
+  .navbar-brand {
+    font-size: 18px; 
+    }
+
+  .navbar a {
+      font-size: 18px; 
+  }
+	
+	.form-control {
+    height: 25px; 
+    font-size: 10px; 
+	}
+
+	.btn {
+	padding: 2px 16px; 
+	font-size: 10px; 
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+  h1 {
+    position: relative;
+    left: 50px;
+}
+
+}
+
+@media screen and (max-width: 1100px) {
+  h1 {
+    position: relative;
+    left: 70px;
+}
+
+}
